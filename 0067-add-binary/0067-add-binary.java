@@ -28,13 +28,13 @@ class Solution {
             int totalBase2 = total % 2;
             remember = total / 2;
 
-            res.insert(0, totalBase2);
+            res.append(totalBase2);
 
         }
 
         if (remember == 1)
-            res.insert(0, "1");
+            res.append("1");
 
-        return res.toString();
+        return res.reverse().toString();
     }
 }
